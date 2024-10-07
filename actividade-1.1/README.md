@@ -45,7 +45,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Agrega a **Larisa Shepitko** al grupo de **directoras**.
 3. Agrega a **Bibi Andersson** y **Monica Vitti** al grupo de **actrices**.
 
-### [Captura: Grupos creados y usuarios asignados]
+#
 
 ---
 
@@ -55,7 +55,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Haz clic en **Agregar roles y características**.
 3. Selecciona **Windows Server Backup** y sigue las instrucciones.
 
-### [Captura: Instalación de la característica de Copias de Seguridad]
+#
 
 ---
 
@@ -67,7 +67,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
     - **200 MB** para Larisa Shepitko.
 3. Verifica que se cumplan.
 
-### [Captura: Cuotas de disco configuradas]
+#
 
 ---
 
@@ -77,7 +77,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. **persona-1966** para Bibi Andersson - Lectura y ejecución.
 3. **l'avventura-1960** para Monica Vitti - Solo lectura.
 
-### [Captura: Configuración de permisos especiales]
+#
 
 ---
 
@@ -85,3 +85,49 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 
 1. Abre el **Administrador de tareas**.
 2. Ve a la pestaña **Servicios** y revisa los servicios con inicio automático.
+
+
+## 10. Crear una tarea programada para recordarnos cada hora
+
+1. Abre **Programador de tareas**.
+2. Crea una nueva tarea que muestre un mensaje con el texto: **"Debo ver The Conversation (1974) esta noche"** cada hora.
+
+#
+
+---
+
+## 11. Monitor de Rendimiento
+
+1. Abre **Monitor de rendimiento**.
+2. Muestra información sobre el **disco físico**, **procesador**, **interfaz de red** y **memoria**.
+
+#
+
+---
+
+## 12. ¿Cómo podemos saber cuáles son los 5 procesos con mayor consumo de CPU, disco y memoria?
+
+1. Abre el **Administrador de tareas**.
+2. Ve a la pestaña **Rendimiento** y ordena los procesos por **CPU**, **disco** y **memoria**.
+
+#
+
+---
+
+## 13. Crear una copia de seguridad de las carpetas personales de Larisa Shepitko y Bibi Andersson
+
+1. Usa **Windows Server Backup** para hacer una copia de seguridad de las carpetas personales de **Larisa Shepitko** y **Bibi Andersson**.
+
+#
+
+---
+
+## 14. Disminuir la prioridad de Bloc de Notas a "Below Normal"
+
+1. Abre el **Administrador de tareas**.
+2. Encuentra el proceso de **Notepad**.
+3. Haz clic derecho y selecciona **Set Priority** > **Below Normal**.
+
+#
+
+
