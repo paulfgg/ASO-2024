@@ -121,7 +121,9 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 
 ## 13. Crear una copia de seguridad de las carpetas personales de Larisa Shepitko y Bibi Andersson
 
-1. Usa **Windows Server Backup** para hacer una copia de seguridad de las carpetas personales de **Larisa Shepitko** y **Bibi Andersson**.
+1. Antes de nada compartiremos una carpeta en red en la cual alojaremos nuestra copia de seguridad.
+2. Usa **Windows Server Backup** para hacer una copia de seguridad de las carpetas personales de **Larisa Shepitko** y **Bibi Andersson**.
+
 
 ![Backup 1](img-1.1/13.1.png)
 ![Backup 2](img-1.1/13.2.png)
