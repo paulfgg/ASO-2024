@@ -6,6 +6,8 @@ En esta actividad deberás realizar las siguientes tareas:
 
 Intenta seguir las convenciones comentadas en clase basadas en el documento "Gestión de VM con VirtualBox".
 
+![Instalacion de Windows Server](img-1.1/1.png)
+
 ## 2. Elimina la necesidad de utilizar CTRL+ALT+DEL para ingresar credenciales y acceder al sistema.
 
 1. Ve a **Herramientas administrativas**.
@@ -13,8 +15,8 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 3. Navega hasta **Políticas locales > Opciones de seguridad**.
 4. Busca la opción **Inicio de sesión interactivo: no requerir CTRL+ALT+DEL** y habilítala.
 
-#
 
+![Activada la autenticacion de CTRL+ALT+DEL](img-1.1/2.png)
 
 
 ## 3. Modificar las directivas de contraseñas
@@ -23,8 +25,8 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Ve a **Configuración del equipo > Configuración de Windows > Configuración de seguridad > Directivas de cuenta > Directiva de contraseñas**.
 3. Modifica la **vigencia mínima** a 15 días y la **vigencia máxima** a 60 días.
 
-#
-
+![Directivas de contraseña](img-1.1/3.png)
+![Directivas de contraseña 2](img-1.1/3.2.png)
 
 
 ## 4. Agregue 3 nuevos usuarios al sistema: Larisa Shepitko, Bibi Andersson y Monica Vitti
@@ -37,7 +39,8 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 3. Establece una contraseña para cada uno.
 4. Verifica que puedan iniciar sesión.
 
-#
+![Usuario](img-1.1/4.png)
+![Menu Inicio Sesión](img-1.1/4.1.png)
 
 ## 5. Agregue 2 grupos llamados "directoras" y "actrices"
 
@@ -45,7 +48,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Agrega a **Larisa Shepitko** al grupo de **directoras**.
 3. Agrega a **Bibi Andersson** y **Monica Vitti** al grupo de **actrices**.
 
-#
+![Grupos](img-1.1/5.png)
 
 ---
 
@@ -55,7 +58,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Haz clic en **Agregar roles y características**.
 3. Selecciona **Windows Server Backup** y sigue las instrucciones.
 
-#
+![Windows Server Backup](img-1.1/6.png)
 
 ---
 
@@ -67,7 +70,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
     - **200 MB** para Larisa Shepitko.
 3. Verifica que se cumplan.
 
-#
+![Cuotas de Disco](img-1.1/7.png)
 
 ---
 
@@ -77,8 +80,9 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. **persona-1966** para Bibi Andersson - Lectura y ejecución.
 3. **l'avventura-1960** para Monica Vitti - Solo lectura.
 
-#
-
+![Carpetas](img-1.1/8.1.png)
+![Carpetas2](img-1.1/8.2.png)
+![Carpetas3](img-1.1/8.3.png)
 ---
 
 ## 9. Enumere los servicios que se inician automáticamente al iniciar la computadora
@@ -86,13 +90,14 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 1. Abre el **Administrador de tareas**.
 2. Ve a la pestaña **Servicios** y revisa los servicios con inicio automático.
 
+![Servicios](img-1.1/9.png)
 
 ## 10. Crear una tarea programada para recordarnos cada hora
 
 1. Abre **Programador de tareas**.
 2. Crea una nueva tarea que muestre un mensaje con el texto: **"Debo ver The Conversation (1974) esta noche"** cada hora.
 
-#
+![Tarea Programada](img-1.1/10.png)
 
 ---
 
@@ -101,7 +106,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 1. Abre **Monitor de rendimiento**.
 2. Muestra información sobre el **disco físico**, **procesador**, **interfaz de red** y **memoria**.
 
-#
+![Monitor de Rendimiento](img-1.1/11.png)
 
 ---
 
@@ -110,7 +115,7 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 1. Abre el **Administrador de tareas**.
 2. Ve a la pestaña **Rendimiento** y ordena los procesos por **CPU**, **disco** y **memoria**.
 
-#
+![Administrador de Tareas](img-1.1/12.png)
 
 ---
 
@@ -118,7 +123,10 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 
 1. Usa **Windows Server Backup** para hacer una copia de seguridad de las carpetas personales de **Larisa Shepitko** y **Bibi Andersson**.
 
-#
+![Backup 1](img-1.1/13.1.png)
+![Backup 2](img-1.1/13.2.png)
+![Backup 3](img-1.1/13.3.png)
+![Backup 4](img-1.1/13.4.png)
 
 ---
 
@@ -128,6 +136,6 @@ Intenta seguir las convenciones comentadas en clase basadas en el documento "Ges
 2. Encuentra el proceso de **Notepad**.
 3. Haz clic derecho y selecciona **Set Priority** > **Below Normal**.
 
-#
+![Prioridad](img-1.1/14.png)
 
 
