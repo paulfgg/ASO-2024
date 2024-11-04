@@ -7,9 +7,9 @@
    - En el servidor, instala dos tarjetas de red:
      - Una en "Adaptador en puente" para la conexión a Internet.
      - Otra en "Red interna", ya que el servidor se configurará como un router Linux para la red interna.
-![1](../img/1.png)
-![2](../img/2.png)
-![3](../img/3.png)
+![1](img/1.png)
+![2](img/2.png)
+![3](img/3.png)
 ![4](../img/4.png)
 ![5](../img/5.png)
 ## Instalación de OpenLDAP en el Servidor
