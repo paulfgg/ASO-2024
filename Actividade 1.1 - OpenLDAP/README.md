@@ -10,6 +10,11 @@
 ![1](img/1.png)
 ![2](img/2.png)
 ![3](img/3.png)
+   Este comando configura iptables para que todos los paquetes salientes a través de la interfaz enp0s3 usen la IP pública       de esa interfaz, permitiendo que una red local comparta una conexión a Internet mediante NAT.
+      - t nat: Usa la tabla nat para traducción de direcciones de red.
+      - A POSTROUTING: Añade la regla en la cadena POSTROUTING, aplicándose a paquetes salientes.
+      - o enp0s3: La regla se aplica a la interfaz de salida enp0s3.
+      - j MASQUERADE: Realiza enmascaramiento, reemplazando la IP de origen con la IP de la interfaz de salida.
 ![4](img/4.png)
 ![5](img/5.png)
 ## Instalación de OpenLDAP en el Servidor
@@ -39,7 +44,14 @@
    - Añade los grupos con:
     
    ![15](img/15.png)
-3. **Creación de Usuarios:**
+   Este comando ldapadd se usa para agregar entradas al directorio LDAP
+      
+      - x: Usa autenticación simple en lugar de SASL (Simple Authentication and Security Layer).
+      - D cn=admin,dc=pfgLDAP,dc=local: Especifica el DN (Distinguished Name) del usuario administrador, en este caso               - cn=admin,dc=pfgLDAP,dc=local, quien realiza la operación.
+      - W: Solicita la contraseña del usuario especificado para autenticación.
+      - f: Indica el archivo que contiene las entradas LDAP a agregar.
+   
+4. **Creación de Usuarios:**
    - Define cada usuario en un archivo LDIF. Aquí un ejemplo:
    ![16](img/16.png)
    ![17](img/17.png)
