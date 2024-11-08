@@ -69,6 +69,9 @@
 1. **Instalación LDAP en el Cliente:**
  
 ![21](img/21.png)
+![22](img/22.png)
 2. **Ahora configuraremos dos archivos de esta forma:**
 Ahora configuraremos dos archivos de esta forma:
-![22](img/22.png)
+
+![23](img/23.png)
+![24](img/24.png)
