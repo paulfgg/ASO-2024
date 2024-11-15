@@ -94,7 +94,7 @@
 ![15](img/15.png)
 
 2. **Recreación de la Estructura**
-   - Para crear nuevas OUs, grupos y usuarios:
+   - Para crear nuevas OUs, grupos y usuarios
      - Selecciona el elemento padre correspondiente en el árbol y elige "Crear un objeto hijo".
      - Para OUs, selecciona "Unidad Organizativa".
      - Para grupos, elige "Genérico: Grupo Posix".
