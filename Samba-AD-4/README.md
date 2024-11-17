@@ -2,25 +2,25 @@
 
 Para empezar crearemos y configuraremos tanto un Ubuntu Server como un Ubuntu Desktop. Destacaremos poner una tarjeta en modo adaptador solo anfitrión para posteriormente conectarnos por SSH a nuestro equipo.
 
-![Img1](img1.png)
+![Img1](img/1.png)
 
 A continuación accederemos a nuestro servidor mediante SSH:
 
-![Img2](img2.png)
+![Img2](img/2.png)
 
 ## Configuración del servidor
 
 1. Cambiar el hostname del servidor:
 
-![Img3](img3.png)
+![Img3](img/3.png)
 
 2. Modificar el archivo de hosts para mapear el hostname y el dominio:
 
-![Img4](img4.png)
+![Img4](img/4.png)
 
 3. Verificar si el FQDN resuelve la IP de Samba:
 
-![Img5](img5.png)
+![Img5](img/5.png)
 
 4. Desactivar el servicio systemd-resolved y configurar el archivo `resolv.conf`:
 
@@ -32,7 +32,7 @@ sudo nano /etc/resolv.conf
 sudo chattr +i /etc/resolv.conf
 ```
 
-![Img6](img6.png)
+![Img6](img/6.png)
 
 ## Instalación de Samba
 
@@ -50,7 +50,7 @@ sudo systemctl unmask samba-ad-dc
 sudo systemctl enable samba-ad-dc
 ```
 
-![Img7](img7.png)
+![Img7](img/7.png)
 
 ## Configuración de Samba como Active Directory
 
@@ -73,7 +73,7 @@ Configura los siguientes parámetros durante la provisión:
 - DNS backend: SAMBA_INTERNAL
 - DNS forwarder IP address: 8.8.8.8
 
-![Img8](img8.png)
+![Img8](img/8.png)
 
 3. Configurar Kerberos:
 
@@ -82,7 +82,7 @@ sudo mv /etc/krb5.conf /etc/krb5.conf.orig
 sudo cp /var/lib/samba/private/krb5.conf /etc/krb5.conf
 ```
 
-![Img9](img9.png)
+![Img9](img/9.png)
 
 4. Iniciar el servicio Samba AD:
 
@@ -91,7 +91,7 @@ sudo systemctl start samba-ad-dc
 sudo systemctl status samba-ad-dc
 ```
 
-![Img10](img10.png)
+![Img10](img/10.png)
 
 ## Configurar sincronización de tiempo
 
@@ -116,7 +116,7 @@ allow 192.168.15.0/24
 ntpsigndsocket /var/lib/samba/ntp_signd
 ```
 
-![Img11](img11.png)
+![Img11](img/11.png)
 
 3. Reiniciar y verificar el servicio `chronyd`:
 
@@ -125,7 +125,7 @@ sudo systemctl restart chronyd
 sudo systemctl status chronyd
 ```
 
-![Img12](img12.png)
+![Img12](img/12.png)
 
 ## Verificar Samba Active Directory
 
@@ -156,7 +156,7 @@ kinit administrator@PFGASO.LOCAL
 klist
 ```
 
-![Img13](img13.png)
+![Img13](img/13.png)
 
 5. Iniciar sesión en Samba a través de SMB:
 
@@ -164,7 +164,7 @@ klist
 sudo smbclient //localhost/netlogon -U 'administrator'
 ```
 
-![Img14](img14.png)
+![Img14](img/14.png)
 
 6. Cambiar contraseña de usuario `administrator`:
 
@@ -178,7 +178,7 @@ sudo samba-tool user setpassword administrator
 testparm
 ```
 
-![Img15](img15.png)
+![Img15](img/15.png)
 
 ## Gestión de usuarios y grupos
 
@@ -206,7 +206,7 @@ sudo samba-tool user delete <nombre_del_usuario>
 sudo samba-tool computer list
 ```
 
-![Img16](img16.png)
+![Img16](img/16.png)
 
 5. Eliminar un equipo:
 
@@ -226,7 +226,7 @@ samba-tool group add <nombre_del_grupo>
 samba-tool group list
 ```
 
-![Img17](img17.png)
+![Img17](img/17.png)
 
 8. Listar miembros de un grupo:
 
