@@ -22,7 +22,7 @@ A continuación accederemos a nuestro servidor mediante SSH:
 
 ![Img5](img/5.png)
 
-4. Desactivar el servicio systemd-resolved y configurar el archivo `resolv.conf`:
+4. Desactivar el servicio systemd-resolved y configurar el archivo `resolv.conf' :
 
 ```bash
 sudo systemctl disable --now systemd-resolved
